@@ -1,0 +1,25 @@
+{
+  "name": "task-manager",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "start": "node Backend/server",
+    "dev": "nodemon backend/server",
+    "devf": "npm run dev --prefix Frontend",
+    "both": "concurrently \"npm run dev \" \"npm run devf \" "
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "mongoose": "^8.9.2",
+    "react-icons": "^5.4.0"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.0"
+  }
+}
