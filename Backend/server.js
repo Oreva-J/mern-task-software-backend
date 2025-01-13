@@ -12,9 +12,7 @@ const app = express()
 // middleware
 app.use(express.json())
 app.use(express.urlencoded({extended: false}))
-app.use(cors({
-    origin: ['http://localhost:5173/', 'https://mern-task-program.onrender.com', 'https://mern-task-program.vercel.app/']
-}))
+app.use(cors());
 app.use(taskRoutes)
 
 // Home Page route
