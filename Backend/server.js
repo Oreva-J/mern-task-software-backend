@@ -13,7 +13,7 @@ const app = express()
 app.use(express.json())
 app.use(express.urlencoded({extended: false}))
 app.use(cors({
-    origin: ['http://localhost:5173/', 'https://mern-task-program.orender.com']
+    origin: ['http://localhost:5173/', 'https://mern-task-program.onrender.com', 'https://mern-task-program.vercel.app/']
 }))
 app.use(taskRoutes)
 
